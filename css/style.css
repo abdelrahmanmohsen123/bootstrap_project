@@ -5,19 +5,39 @@
 }
 .head-container{
 border-radius: 10px;
-color:#FFE9B1;
-font-family: 'Times New Roman', Times, serif;
+color: #38851a;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-shadow: 1px 1px 0 #14a800;
 }
 .head-container p{
-    color: #FCFDF2;
+    color: #000;
     font-family: 'Courier New', Courier, monospace;
+text-shadow: 1px 1px 0 transparent;
+
+}
+/*For any Header in our page*/
+.headFontStyle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+/*For any side paragraph in our page*/
+.paragFontStyle{
+    color: rgb(51, 51, 51);
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
 }
 #getStarted{
-font-size: 18px;
-color: #000;
-border-radius: 25px;
-padding: 5px 25px;   
-
+    font-size: 18px;
+    color: snow;
+    background-color: #14a800;
+    border-radius: 25px;
+    padding: 5px 25px;   
+    margin-bottom: 8px;
+}
+#getStarted:hover{
+    background-color: #1dcc06;
 }
 .head-container img{
 width: 99%;
@@ -26,14 +46,21 @@ padding: 12px;
 border-radius: 20px;
 }
 #trusted_by{
-    margin-top: 25px;
+margin-top: 25px;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 }
+#trusted_by img {
+    width: 16%;
+    height: 60px;
+}
 .logo{
     width: 80px;
     height: 50px;
+}
+.nav-link , .btn  {
+    color:#000;
 }
 .nav-link:hover {
     color:#0d6efd;
