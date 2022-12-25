@@ -6,9 +6,9 @@
 
     border: 1px solid lightgray;
     border-radius: 30px;
-    width: 50% !important;
+    width: 55% !important;
     margin-top: 3vh;
-    align-content: center !important;
+
 
 }
 .ii{
@@ -18,12 +18,8 @@
     border: 2px solid rgb(23, 192, 23) !important;
 }
 #div1 ,#div2{
-    width:40% !important;
     border: 2px solid lightgray;
     border-radius: 30px;
-    padding: 1rem !important;
-    margin-left: 3rem !important;
-    margin-bottom: 2rem !important;
 }
 
 .borc{
@@ -49,6 +45,7 @@
     border-radius: 22px !important;
     color: gray ;
     margin: auto !important;
+    margin-top: 2rem !important;
     text-align: center !important;
     margin-bottom: 1rem !important;
 }
