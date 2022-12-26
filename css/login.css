@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    border-radius: 20px !important;
+    width: 80vh !important;
+}
+input{
+    width: 60% !important;
+    margin: auto !important;
+    
+}
+input:active{
+    border:  2px solid rgb(20, 163, 20) !important;
+}
+.ues{
+    
+    width: 80% !important;
+    
+    margin: auto !important;
+}
+.withmail{
+    color: rgb(255, 255, 255) !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    width: 70% !important;
+    background-color: rgb(20, 163, 20) !important;
+}
+.withmail:hover{
+    background-color: rgb(23, 202, 23) !important;
+}
+.google{
+    border-radius: 70%;
+    float: left !important;
+}
+.buto{
+    
+    color: rgb(255, 255, 255) !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    width: 70% !important;
+}
+.appl{
+    border: 1px solid black !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    width: 70% !important;
+    margin: auto !important;
+
+}
+.sub{
+    border: 2px solid rgb(28, 151, 28) !important;
+    color:rgb(28, 151, 28) !important ;
+    border-radius: 30px !important;
+    width: 40% !important;
+}
