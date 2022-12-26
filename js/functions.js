@@ -5,19 +5,14 @@ window.addEventListener('load', function () {
 
     console.log("i'm Opening");
 
-   
-
 });//end Loading
 
-
+//this is a listener for @media query screen
+let listner = window.matchMedia("(max-width:768px)");
 let navItem1 = this.document.querySelector("#collapseOne");
 let navItem2 = this.document.querySelector("#collapse2");
 let navItem3 = this.document.querySelector("#collapse3");
 let navItem4 = this.document.querySelector("#collapse4");
-
-//this is a listener for @media query screen
-let listner = window.matchMedia("(max-width:768px)");
-
 //function will be used as callBack function
 function showLsItemsOfAccordion(e) {
     console.log("i'm changing screen");
@@ -40,30 +35,25 @@ function showLsItemsOfAccordion(e) {
 //add this is listener on @media query screen
 listner.addEventListener("change",showLsItemsOfAccordion);
 
-//show more function
-function showMoreCategories(){
-    navItem1 = document.getElementsByClassName("toBeShown");
-navItem2 = navItem1[0];
-navItem3 = navItem1[1];
-navItem4 = navItem1[2];
-
-navItem1 = document.querySelector("#seeMoreCateg");
-let togleTxt;
-navItem1.addEventListener("click", function () {
+//show more categories btn 
+  let   toBeShown = document.getElementsByClassName("toBeShown");
+let seeMoreBtn = document.querySelector("#seeMoreCateg");
+let togleTxt=true;
+seeMoreBtn.addEventListener("click", function () {
 
     if (togleTxt) {
-        navItem1.textContent="show more...";
+        seeMoreCateg.textContent="Show less...";
          togleTxt= false;
     console.log(togleTxt);
         }
         else{
-            navItem1.textContent="show less...";
+            seeMoreCateg.textContent="Show more (4)";
             togleTxt=true;
             console.log(togleTxt);
         }
-    navItem2.classList.toggle("d-none");
-    navItem3.classList.toggle("d-none");
-    navItem4.classList.toggle("d-none");
+        toBeShown[0].classList.toggle("d-none");
+        toBeShown[1].classList.toggle("d-none");
+        toBeShown[2].classList.toggle("d-none");
+        toBeShown[3].classList.toggle("d-none");
    
 });//onClick button closer
-}//close function
