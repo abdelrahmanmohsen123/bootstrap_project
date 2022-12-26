@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--HELOOOO FROM MEZOOO USE cdn js FILES PLEASEEEEE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <link href="css/style.css" rel="stylesheet">
@@ -184,7 +184,8 @@
         <p class=" headFontStyle">Browse talent by category</p>
         <p class=" paragFontStyle">Looking for work? <span class="txtLink text-success">Browse jobs</span></p>
     </div> <!--End ofSEARCHING FOR JJJJJJJJJJOoooooooooooooobbbbbbbbbbbbbbbbSSSSS-->
-    <div class="container">
+
+    <div class="container" id="categoJobs">
         <div class="row">
             <section class="col-12 col-md-6 col-lg-3 mb-2" style="height: 8rem;">
                 <div class="card bg-light h-100">
@@ -232,7 +233,7 @@
             </section>
         </div>
 
-        <div class="row ">
+        <div class="row">
             <section class="col-12 col-md-6 col-lg-3 mb-2" style="height: 8rem;">
                 <div class="card bg-light h-100">
                     <div class=" card-body">
@@ -244,7 +245,7 @@
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-6 col-lg-3 mb-2 ">
+            <section class="d-none d-md-block col-md-6 col-lg-3 mb-2 toBeShown">
                 <div class="card bg-light h-100">
                     <div class=" card-body">
                         <h5 class="h5 mb-3">Finance & Accounting</h5>
@@ -255,7 +256,7 @@
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-6 col-lg-3 mb-2" style="height: 8rem;">
+            <section class="d-none d-md-block col-md-6 col-lg-3 mb-2 toBeShown" style="height: 8rem;">
                 <div class="card bg-light h-100">
                     <div class=" card-body">
                         <h5 class="h5 mb-3"> Engineering & Architecture</h5>
@@ -266,7 +267,7 @@
                     </div>
                 </div>
             </section>
-            <section class="col-12 col-md-6 col-lg-3 mb-2">
+            <section class="d-none d-md-block col-md-6 col-lg-3 mb-2 toBeShown">
                 <div class="card bg-light h-100">
                     <div class=" card-body">
                         <h5 class="h5 mb-3">Legal</h5>
@@ -279,6 +280,7 @@
             </section>
         </div>
 
+        <div id="seeMoreCateg" class="d-md-none row txtLink text-success g-0">see more...</div>
     </div>
 
     <!-- /////////start footer -->
@@ -678,8 +680,8 @@
         </footer>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/functions.js"></script>
 </body>
 

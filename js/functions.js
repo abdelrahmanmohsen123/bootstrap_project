@@ -31,3 +31,28 @@ function showLsItemsOfAccordion(listnr) {
 //add this is listener on @media query screen
 showLsItemsOfAccordion(listner);
 listner.addListener(showLsItemsOfAccordion);
+
+navItem1 = document.getElementsByClassName("toBeShown");
+navItem2 = navItem1[0];
+navItem3 = navItem1[1];
+navItem4 = navItem1[2];
+
+navItem1 = document.querySelector("#seeMoreCateg");
+let togleTxt;
+navItem1.addEventListener("click", function () {
+
+    if (togleTxt) {
+        navItem1.textContent="show more...";
+         togleTxt= false;
+    console.log(togleTxt);
+        }
+        else{
+            navItem1.textContent="show less...";
+            togleTxt=true;
+            console.log(togleTxt);
+        }
+    navItem2.classList.toggle("d-none");
+    navItem3.classList.toggle("d-none");
+    navItem4.classList.toggle("d-none");
+   
+});//onClick button closer

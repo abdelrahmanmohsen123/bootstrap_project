@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --greenDark:#38851a;
+    --greenLight:#14a800;
 }
 
 .head-container {
     border-radius: 10px;
-    color: #38851a;
+    color: var(--greenDark);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 1px 1px 0 #14a800;
+    text-shadow: 1px 1px 0 var(--greenLight);
 }
 
 .head-container p {
@@ -36,7 +38,7 @@
 #getStarted {
     font-size: 18px;
     color: snow;
-    background-color: #14a800;
+    background-color: var(--greenLight);
     border-radius: 25px;
     padding: 5px 25px;
     margin-bottom: 8px;
@@ -120,7 +122,9 @@
 
 .footer li a:hover,
 .footer_subtitle a:hover,
-.txtLink:hover {
+.txtLink:hover , h5:hover
+,#seeMoreCateg:hover
+{
     cursor: pointer;
     text-decoration: underline;
 }
