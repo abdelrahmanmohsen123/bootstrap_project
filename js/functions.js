@@ -5,7 +5,6 @@ window.addEventListener('load', function () {
 
     console.log("i'm Opening");
 
-});//end Loading
 
 //this is a listener for @media query screen
 let listner = window.matchMedia("(max-width:768px)");
@@ -13,6 +12,10 @@ let navItem1 = this.document.querySelector("#collapseOne");
 let navItem2 = this.document.querySelector("#collapse2");
 let navItem3 = this.document.querySelector("#collapse3");
 let navItem4 = this.document.querySelector("#collapse4");
+
+//add this is listener on @media query screen
+listner.addEventListener("change",showLsItemsOfAccordion);
+
 //function will be used as callBack function
 function showLsItemsOfAccordion(e) {
     console.log("i'm changing screen");
@@ -32,8 +35,12 @@ function showLsItemsOfAccordion(e) {
 
     }
 }
-//add this is listener on @media query screen
-listner.addEventListener("change",showLsItemsOfAccordion);
+
+
+
+});//end Loading
+
+
 
 //show more categories btn 
   let   toBeShown = document.getElementsByClassName("toBeShown");
