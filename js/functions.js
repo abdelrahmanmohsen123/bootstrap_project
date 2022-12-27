@@ -1,6 +1,14 @@
 window.addEventListener('load', function () {
-    $('.nav-item').on('mouseover', function () {
-        // $(this).addClass('dropup text-primary')
+
+    $('.active').css('color','#14a800')
+    $('.unactive').on('mouseover', function () {
+        
+            // $(this).css('color','#14a800')
+            $('.active').css('color','#4b4b4b')
+
+
+        
+      
     });
 
     console.log("i'm Opening");
