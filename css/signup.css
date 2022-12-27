@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 #cont{
 
@@ -8,7 +9,6 @@
     border-radius: 30px;
     width: 55% !important;
     margin-top: 3vh;
-
 
 }
 .ii{
@@ -60,4 +60,10 @@
 a{
     font-weight: bold !important;
     text-decoration: none !important;
+}
+@media (max-width:768px) {
+    #cont{       
+        width: 75% !important;
+
+    }
 }
