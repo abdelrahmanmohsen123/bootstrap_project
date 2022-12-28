@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    p{
+        color: #4b4b4b;
+    }
+</style>
 
 <body>
 
@@ -103,6 +108,7 @@
         <section class="container mt-3 p-5">
             <div class="row my-5">
                 <div class="col-8 mb-3">
+                    <!-- start welcom section  -->
                     <div class="card p-3" style="border-radius: 10px;max-height:20vh">
                         <div class="row">
                             
@@ -124,20 +130,100 @@
                         </div>
                        
                     </div>
-                    <div class="row my-5">
+                    <!-- end welcom -->
+                    <!-- start input search  -->
+                    <div class="row my-3">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="search for job" aria-label="Dollar amount (with dot and two decimal places)">
                             <span class="input-group-text bg-success" >
-                                    <a href=""><img src="images/search.png" style="max-width:30px;" alt=""></a>
+                                    <a href="">
+                                        <!-- <img src="images/search.png" style="max-width:30px;" alt=""> -->
+                                        <i class="fas fa-search text-light"></i>
+                                  </a>
                             </span>
                             <!-- <span class="input-group-text">0.00</span> -->
                           </div>
         
                     </div>
+                    <!-- end input search -->
+
+                    <div class="card" >
+                        <div class="card-body">
+                            <div class="row">
+                                <h5 class="card-title mb-3 ">Jobs you might like</h5>
+                                
+                            </div>
+                            <div class="row">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Best matches</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Most Resent</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Saved Jobs</button>
+                                    </li>
+                                  </ul>
+                                  <hr >
+                                  <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <p style="color: #4b4b4b;">
+                                            Browse jobs that match your experience to a client's hiring preferences. Ordered by most relevant.
+                                        </p>
+                                        <div class="row shadow-none p-3 mb-5 bg-light rounded " >
+                                            <div class="col-10">
+                                                <h6 class="mb-4" style="color: #4b4b4b;;">Re-create static web pages with Bootstrap in RTL</h6>
+
+                                            </div>
+                                            <div class="col-2">
+                                                
+                                                    <i style="border: 2px solid #4b4b4b;" class="far fa-thumbs-up rounded-circle p-2 like text-success"></i> 
+                                                    <i style="border: 2px solid #4b4b4b;" class="far fa-heart rounded-circle p-2 like text-success"></i>
+
+                                                
+                                            </div>
+                                            <p class="fs-10 display-10 " style="opacity: .7;"><span >Fixed-price </span> - Intermediate - Est. Budget: $30 - Posted 13 hours ago </p>
+                                            <p>
+                                                I need to re-create a static web pages, with the following conditions: 1. Code must be written from scratch with Bootstrap 5. Do not use existing code. 2. I want the code as clean and minimal as possible using Bootstrap components. 3. Keep the same images from the original pages, but make it easy to replace (i.e. try to use img tags rather than SVG or CSS ...
+                                            </p>
+                                            <div class="row gap-2 mb-3">
+                                                <button type="button"  class="btn btn-secondary btn-sm col-2" disabled>Html</button>
+                                                <button type="button"  class="btn btn-secondary btn-sm col-2" disabled>css</button>
+                                                <button type="button"  class="btn btn-secondary btn-sm col-2" disabled>bootstrap</button>
+                                                <button type="button"  class="btn btn-secondary btn-sm col-2" disabled>jquery</button>
+                                            </div>
+                                            <p><span style="opacity: .8;">Proposal :</span> 20 - 50</p>
+                                            <div class="row">
+                                                
+                                                <p><i class="fas fa-check-circle text-primary"></i> Payment Verified 
+                                                    <i class="fa-solid fa-star text-success"></i>
+                                                    <i class="fa-solid fa-star text-success"></i>
+                                                    <i class="fa-solid fa-star text-success"></i>
+                                                    <i class="fa-solid fa-star"></i> &emsp;&emsp;
+                                                    <span class="" style="font-weight: bold;"> $10k+ </span>
+                                                    <span style="opacity:.6"> spent</span> &emsp; 
+                                                    <i class="fas fa-map-marker-alt"></i>   <span>Egypt</span> 
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                                  </div>
+                            </div>
+                          
+                        </div>
+                      </div>
+                   
+
                 </div>
+
+                <!-- ////section sidbar -->
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://www.upwork.com/profile-portraits/c1WJn6MuoMUk2lqQ77rqiPMbcQF0Q-FXxMT1tIuNTgcSesKNVo9UD_dhxswn_iwYiC" class="card-img-top  rounded-pill " style="width: 25%;height: 25%;margin: 20px auto;"   alt="Abdelrahman">
+                        <img src="https://www.upwork.com/profile-portraits/c1WJn6MuoMUk2lqQ77rqiPMbcQF0Q-FXxMT1tIuNTgcSesKNVo9UD_dhxswn_iwYiC" class="card-img-top  rounded-circle " style="width: 25%;height: 25%;margin: 20px auto;"   alt="Abdelrahman">
                         <div class="card-title text-decoration-underline mx-auto mb-0">
                             <h3>Abdelrahman</h3>
 
