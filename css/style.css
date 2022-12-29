@@ -204,3 +204,12 @@ background-color:paleturquoise;
 cursor: pointer;
 
 }
+.av_Connect{
+    color:#14a800
+
+}
+.av_Connect:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
