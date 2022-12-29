@@ -7,6 +7,8 @@ window.addEventListener('load', function () {
         // $(this).css('color','#14a800')
         $('.active').css('color', '#4b4b4b')
     });
+
+
 });//end Loading
 
 //show more categories btn 
@@ -46,21 +48,17 @@ function showLsItemsOfAccordion(e) {
     if (e.matches) {
         console.log("im changing media on" + e.matches);
         navItem1.classList.remove("show");
-        navItem1.id = "collapseOne";
         navItem2.classList.remove("show");
         navItem3.classList.remove("show");
         navItem4.classList.remove("show");
         console.log(e.matches);
-
     } else {
         console.log("im NOT small media on" + e.matches);
-
         navItem1.classList.add("show");
         navItem2.classList.add("show");
         navItem3.classList.add("show");
         navItem4.classList.add("show");
         console.log(e);
-
     }
 }
 //add this is listener on @media query screen
